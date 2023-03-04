@@ -37,8 +37,15 @@ function calculate() {
     var enchanted_lava_bucket = document.getElementById("elava").checked
     var enchanted_magma_bucket = document.getElementById("magma").checked
     var enchanted_plasma_bucket = document.getElementById("plasma").checked
+    var budget_hopper = document.getElementById("bhopper").checked
     var minions = document.getElementById("minions").value
     var cooldown_duration = 12
+    var reduce = 0.9
+
+    if (budget_hopper) {
+        console.log("yes")
+        reduce = 0.5
+    }
 
     if (enchanted_lava_bucket) {
         cooldown_duration = 12 / 1.25
@@ -79,8 +86,8 @@ function calculate() {
                             money += Math.floor(cycles/192) * prices[0]
                             money += Math.floor(cycles/192) * prices[2]
                             money += cycles * prices[1]
-                            money += cycles * prices[3] * 0.9
-                            money += cycles * prices[4] * 0.9
+                            money += cycles * prices[3] * reduce
+                            money += cycles * prices[4] * reduce
 
                             total_money = Math.floor(money * minions)
 

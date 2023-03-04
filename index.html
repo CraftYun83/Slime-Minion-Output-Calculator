@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Slime Minion Output Calculator</title>
+</head>
+<body>
+    <h1>How many minions do you have?</h1>
+    <input type="number" id="minions" min="1" value="1">
+    <br>
+    <h1>What type of fuel do you use?</h1>
+    <input type="radio" id="none" value="none" name="fuel" checked>
+    <label for="elava">None</label>
+    <br>
+    <input type="radio" id="elava" value="Enchanted Lava Bucket" name="fuel">
+    <label for="elava">Enchanted Lava Bucket</label>
+    <br>
+    <input type="radio" id="magma" value="Magma Bucket" name="fuel">
+    <label for="magma">Magma Bucket</label>
+    <br>
+    <input type="radio" id="plasma" value="Plasma Bucket" name="fuel">
+    <label for="plasma">Plasma Bucket</label>
+    <h1>What type of hopper do you use?</h1>
+    <p>If you aren't using one, ur doing something wrong, so that's not an option.</p>
+    <input type="radio" id="bhopper" value="Budget Hopper" name="hopper" checked>
+    <label for="bhopper">Budget Hopper</label>
+    <br>
+    <input type="radio" id="ehopper" value="Enchanted Hopper" name="hopper">
+    <label for="ehopper">Enchanted Hopper</label>
+    <br>
+    <h1>Are you using corrupt soil?</h1>
+    <input type="radio" id="nosoil" value="No" name="soil" checked>
+    <label for="nosoil">No</label>
+    <br>
+    <input type="radio" id="yessoil" value="Yes" name="soil">
+    <label for="yessoil">Yes</label>
+    <br>
+    <script src="index.js"></script>
+    <button onclick="calculate()">Calculate</button>
+    <div id="results">
+        
+    </div>
+</body>
+</html>

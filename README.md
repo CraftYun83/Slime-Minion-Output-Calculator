@@ -1,4 +1,4 @@
 # Slime-Minion-Output-Calculator
-A script that calculates the daily output of your slime minions.
+A website that can calculate your slime minion output
 
 Uses slothpixel.me API to get bazaar prices of items.
